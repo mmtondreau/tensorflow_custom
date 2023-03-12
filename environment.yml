@@ -1,0 +1,15 @@
+name: tensorflow-template
+dependencies:
+  - python=3.9
+  - pip>=19.0
+  - jupyter
+  - apple::tensorflow-deps
+  - jupyter
+  - pandas
+  - numpy
+  - matplotlib
+  - scikit-learn
+  - pip:
+      - tensorflow-macos
+      - tensorflow-metal
+      - tensorflow-datasets

@@ -1,0 +1,13 @@
+{
+  "version": "0.2.0",
+  "configurations": [
+    {
+      "name": "tensorflow-template",
+      "type": "python",
+      "request": "launch",
+      "cwd": "${workspaceFolder}",
+      "module": "tensorflow-template",
+      "args": []
+    }
+  ]
+}
