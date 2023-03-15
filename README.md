@@ -1,13 +1,38 @@
+# Custom Tensorflow
+
+This project demonstrates some of the customizations that can be performed with tensorflow. Specifically showcasing:
+
+- Custom Training
+  - Epoch and Batch Loop
+  - Interacting with callbacks
+  - Applying gradients
+  - Custom progress bar (tqdm)
+- Custom Layer
+  - LinearLayer
+- Custom Loss
+  - HubberLoss
+  - LeaseSquareError
+
 # Setup
 
 conda env create -f environment.yml --prefix ./.env
 
-# Original Setup
+# Run
 
-conda create --prefix ./.env python=3.9
-conda activate ./.env
-conda install -c apple tensorflow-deps
-python -m pip install tensorflow-macos
-python -m pip install tensorflow-metal
-python -m pip install tensorflow-datasets
-conda install jupyter pandas numpy matplotlib scikit-learn
+```
+.env/bin/python -m tensorflow_custom
+```
+
+# Demo
+
+### Training Loop
+
+![Training Loop](assets/training_loop.gif)
+
+### Loss Plot
+
+![Loss Plot](assets/loss.png)
+
+### Test Predictions Plot
+
+![Predictions](assets/predictions.png)

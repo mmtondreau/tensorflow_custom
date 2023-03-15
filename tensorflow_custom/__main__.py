@@ -75,7 +75,7 @@ val_losses, train_losses = fit(
     callbacks=[
         tf.keras.callbacks.EarlyStopping(
             patience=5,
-            min_delta=0.005,
+            min_delta=0.05,
             baseline=None,
             mode="min",
             monitor="val_loss",
@@ -95,8 +95,8 @@ def plot_metrics(train_metric, val_metric, metric_name, title, ylim=5):
 
 
 # plot_metrics(train_losses, val_losses, "Loss", "Loss", ylim=1.0)
-plt.plot(train_losses, color="blue")
-plt.plot(val_losses, color="green")
+plt.plot(train_losses[10:], color="blue")
+plt.plot(val_losses[10:], color="green")
 plt.show()
 print(train_losses)
 
