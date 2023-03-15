@@ -2,11 +2,11 @@
   "version": "0.2.0",
   "configurations": [
     {
-      "name": "tensorflow-template",
+      "name": "tensorflow-custom",
       "type": "python",
       "request": "launch",
       "cwd": "${workspaceFolder}",
-      "module": "tensorflow-template",
+      "module": "tensorflow_custom",
       "args": []
     }
   ]

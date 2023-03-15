@@ -1,4 +1,4 @@
-name: tensorflow-template
+Name: tensorflow-template
 dependencies:
   - python=3.9
   - pip>=19.0
@@ -9,7 +9,11 @@ dependencies:
   - numpy
   - matplotlib
   - scikit-learn
+  - tqdm
   - pip:
-      - tensorflow-macos
-      - tensorflow-metal
+      - tensorflow-macos==2.9.0
+      - tensorflow-metal==0.5.0
       - tensorflow-datasets
+      - black
+      - flake8
+      - mypy
