@@ -27,7 +27,7 @@ conda env create -f environment.yml --prefix ./.env
 
 ### Training Loop
 
-![Training Loop](assets/training_loop.gif)
+![Training Loop](assets/training_loop_2.gif)
 
 ### Loss Plot
 
